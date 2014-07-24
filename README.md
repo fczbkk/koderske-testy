@@ -37,15 +37,14 @@ Chcem nakódovať layout roztiahnutý na celú šírku stránky. Šírka stránk
 
 ![](responsive.png)
 
-Pri tejto úlohe v prvom rade sledujem, či uchádzačovi vôbec dôjde, v čom je skutočný problém takéhoto zadania.
+Pri tejto úlohe v prvom rade sledujem, či uchádzačovi vôbec dôjde, v čom je skutočný problém takéhoto zadania:
 
-Juniori sa obvykle zamerajú na floating (popisujú mi, ako nafloatujú stĺpce doľava a doprava a že potom budú musieť floating resetovať).
+* Juniori sa obvykle zamerajú na floating (popisujú mi, ako nafloatujú stĺpce doľava a doprava a že potom budú musieť floating resetovať).
+* Seniori si obvykle všimnú **skutočný problém**: mixovanie relatívnych a absolútnych jednotiek - stĺpce musia mať širku zadanú v `%`, ale medzera musí byť v `px`.
 
-Seniori si obvykle všimnú **skutočný problém**: mixovanie relatívnych a absolútnych jednotiek - stĺpce musia mať širku zadanú v `%`, ale medzera musí byť v `px`.
+Riešení je spústa ([praktická ukážka jedného z možných riešení, pomocou `box-sizing`](http://jsfiddle.net/fczbkk/VByJ2/)). Je zaujímavé sledovať, či uchádzači hľadajú elegantné riešenie alebo sa to snažia nahackovať, či používajú moderné CSS (`box-sizing`) alebo sa snažia riešiť kompatibilitu so starými prehliadačmi (každý stĺpec je v dvoch DIVoch, vonkajší definuje šírku a vnútorný definuje padding). Kľudne beriem aj riešenie pomocou tabuliek alebo JavaScriptu.
 
-Riešení je spústa ([praktická ukážka jedného z možných riešení, pomocou `box-sizing`.](http://jsfiddle.net/fczbkk/VByJ2/)). Je zaujímavé sledovať, či uchádzači hľadajú elegantné riešenie alebo sa to snažia nahackovať, či používajú moderné CSS (`box-sizing`) alebo sa snažia riešiť kompatibilitu so starými prehliadačmi (každý stĺpec je v dvoch DIVoch, vonkajší definuje šírku a vnútorný definuje padding). Kľudne beriem aj riešenie pomocou tabuliek alebo JavaScriptu.
-
-Diskusia:
+Diskusia (ak si uchádzač nevie rady):
 
 * Je podľa teba vôbec možné takýto layout dosiahnuť? Ak nie, ako by si upravil zadanie tak, aby bolo realizovateľné, ale pritom čo najbližšie pôvodnému zadaniu?
 
@@ -136,7 +135,7 @@ Od uchádzača očakávam, že zvládne zavesiť a spracovať jednoduchý click 
   });
 ```
 
-Ak použije vanilla JS, urobí na mňa dobrý dojem, ak uchádzač aspoň zmieni (v ideálnom prípade bude schopný vyriešiť) problém s rozdielnosťou v zavesení eventu v IE ('attachEvent') a ostatných browseroch (`addEventListener`).
+Ak použije vanilla JS, urobí na mňa dobrý dojem, ak uchádzač aspoň zmieni (v ideálnom prípade bude schopný vyriešiť) problém s rozdielnosťou v zavesení eventu v IE (`attachEvent`) a ostatných browseroch (`addEventListener`).
 
 ```javascript
   function addEvent(obj, evt, callback) {
