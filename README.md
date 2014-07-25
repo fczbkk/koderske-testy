@@ -47,6 +47,7 @@ Riešení je spústa. Napríklad:
 * [pre moderné browsery, pomocou `box-sizing`](http://jsfiddle.net/fczbkk/VByJ2/2/)
 * [pre staršie browsery, pomocou wrapperu](http://jsfiddle.net/fczbkk/p4mxL/)
 * [pre staršie browsery, pomocou negatívneho marginu](http://jsfiddle.net/fczbkk/N4tda/) (hat tip [Tomáš Hrabinský](https://www.linkedin.com/in/tomashrabinsky))
+* [pre budúce browsery, pomocou `calc`](http://jsfiddle.net/N4tda/1/) (hat tip [Jan Šablatura](https://www.facebook.com/jan.sablatura))
 
 Je zaujímavé sledovať, či uchádzači hľadajú elegantné riešenie alebo sa to snažia nahackovať, či používajú moderné CSS (`box-sizing`) alebo sa snažia riešiť kompatibilitu so starými prehliadačmi (každý stĺpec je v dvoch DIVoch, vonkajší definuje šírku a vnútorný definuje padding). Kľudne beriem aj riešenie pomocou tabuliek alebo JavaScriptu.
 
