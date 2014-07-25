@@ -42,7 +42,13 @@ Pri tejto úlohe v prvom rade sledujem, či uchádzačovi vôbec dôjde, v čom 
 * Juniori sa obvykle zamerajú na floating (popisujú mi, ako nafloatujú stĺpce doľava a doprava a že potom budú musieť floating resetovať).
 * Seniori si obvykle všimnú **skutočný problém**: mixovanie relatívnych a absolútnych jednotiek - stĺpce musia mať širku zadanú v `%`, ale medzera musí byť v `px`.
 
-Riešení je spústa ([praktická ukážka jedného z možných riešení, pomocou `box-sizing`](http://jsfiddle.net/fczbkk/VByJ2/)). Je zaujímavé sledovať, či uchádzači hľadajú elegantné riešenie alebo sa to snažia nahackovať, či používajú moderné CSS (`box-sizing`) alebo sa snažia riešiť kompatibilitu so starými prehliadačmi (každý stĺpec je v dvoch DIVoch, vonkajší definuje šírku a vnútorný definuje padding). Kľudne beriem aj riešenie pomocou tabuliek alebo JavaScriptu.
+Riešení je spústa. Napríklad:
+
+* [pre moderné browsery, pomocou `box-sizing`](http://jsfiddle.net/fczbkk/VByJ2/2/)
+* [pre staršie browsery, pomocou wrapperu](http://jsfiddle.net/fczbkk/p4mxL/)
+* [pre staršie browsery, pomocou negatívneho marginu](http://jsfiddle.net/fczbkk/N4tda/) (hat tip [Tomáš Hrabinský](https://www.linkedin.com/in/tomashrabinsky))
+
+Je zaujímavé sledovať, či uchádzači hľadajú elegantné riešenie alebo sa to snažia nahackovať, či používajú moderné CSS (`box-sizing`) alebo sa snažia riešiť kompatibilitu so starými prehliadačmi (každý stĺpec je v dvoch DIVoch, vonkajší definuje šírku a vnútorný definuje padding). Kľudne beriem aj riešenie pomocou tabuliek alebo JavaScriptu.
 
 Diskusia (ak si uchádzač nevie rady):
 
