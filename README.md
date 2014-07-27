@@ -82,7 +82,7 @@ Kód v ukážke je prešpikovaný chybami. Zaujíma ma, čo všetko si užívate
 * Ani jedna premenná (`root`, `paragraphs`, `i`) nie je zadefinovaná ako premenná (`var`).
 * Ak odstavec nebude priamy potomok root elementu (napr. `#myElement > div > p`), tak `removeChild` nezafunguje.
 * Cyklus je neefektívny, pretože pri každom prechode znova a znova zisťuje dĺžku premennej `paragraphs`.
-* `getElementsByTagName` vracia živú zbierku. Odstránenie elementu zmení obsah a dĺžku výsledku. Takže tento kód by prinajlepšom odstránil každý druhý element z polovice celkového počtu elementov (takže vo výsledku iba štvrtinu).
+* `getElementsByTagName` vracia živú zbierku. Odstránenie elementu zmení obsah a dĺžku výsledku. Takže tento kód by prinajlepšom odstránil každý druhý element.
 
 **Ako by si tento kód prepísal aby fungoval? Napadá ťa vhodnejšie riešenie problému?**
 
