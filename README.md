@@ -91,7 +91,7 @@ Kód v ukážke je prešpikovaný chybami. Zaujíma ma, čo všetko si užívate
 ```javascript
   var root = document.getElementById('myElement');
   var paragraphs = root.getElementsByTagName('p');
-  for (var i = paragraphs.length; i >= 0; --i) {
+  for (var i = paragraphs.length - 1; i >= 0; i--) {
     paragraphs[i].parentNode.removeChild(paragraphs[i]);
   }
 ```
